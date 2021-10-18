@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "TOOTH WHITENING",
+        "description": "Teeth whitening is the process of brightening stained, discoloured, or dull teeth. If carried out by a professional dentist this is a safe and very effective procedure.",
+        "img": "https://i.ibb.co/xXz8ngX/1.jpg",
+        "price": 100
+    },
+    {
+        "id": 2,
+        "name": "DENTISTRY",
+        "description": "Dentistry, also known as dental medicine and oral medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral ",
+        "img": "https://i.ibb.co/tq9h56h/2.jpg",
+        "price": 150
+    },
+    {
+        "id": 3,
+        "name": "TEETH IMPLANTS",
+        "description": "Dental implants are replacement tooth roots made of titanium. Implants provide a strong foundation for fixed (permanent) or removable replacement teeth that are made to match your natural teeth. Instead of individual crowns, some patients may have attachments on their implant that support a removable denture.",
+        "img": "https://i.ibb.co/VNGQqQz/3.jpg",
+        "price": 750
+    },
+    {
+        "id": 4,
+        "name": "DENTAL SURGERY",
+        "description": "The most common types of dental surgery are procedures that many people may not consider dental surgery, because they are so routine – such as orthodonture work or teeth whitening.",
+        "img": "https://i.ibb.co/xz5kKHt/4.jpg",
+        "price": 150
+    },
+    {
+        "id": 5,
+        "name": "ROOT CANAL",
+        "description": "Root Canals are widely regarded as the most common type of dental surgery. Millions of teeth are treated each year, saving many teeth from extractions and relieved from pain and sensitivity. Root canals are typically pain-free and incredibly effective in treating pain.",
+        "img": "https://i.ibb.co/RHxbQrQ/5.jpg",
+        "price": 200
+    },
+    {
+        "id": 6,
+        "name": "TOOTH INVISALIGN",
+        "description": "Invisalign, or “invisible aligners,” is yet one of the most innovative treatments for correcting dental problems next to dental braces. With Invisalign, teeth are properly aligned to their respective place using clear guides. As the name suggests, this is almost invisible making it barely noticeable",
+        "img": "https://i.ibb.co/82Zk0s3/6.jpg",
+        "price": 500
+    }
+]
