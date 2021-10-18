@@ -1,0 +1,10 @@
+.details-container{
+    background:linear-gradient(0deg, rgba(211, 205, 208, 0.151), rgba(60, 68, 65, 0.377)), url(../../images/chair.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.details-card{
+    width: 25%;
+    margin-top: 50px;
+  }

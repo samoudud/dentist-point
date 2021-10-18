@@ -1,0 +1,27 @@
+.overview-container{
+    margin-top: -120px;
+}
+.overview{
+    background-image: url(../../../images/dotted-bg.png);
+    background-size: cover;
+    padding: 30px 0;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.border-r{
+    border-right: 1px solid black;
+}
+
+@media only screen and (max-width:688px) {
+    .overview-container{
+        margin-top: 0px;
+    }
+   .overview{
+       grid-gap: 6px;
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .border-r{
+    border-right: none;
+}
+}

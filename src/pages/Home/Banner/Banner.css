@@ -1,0 +1,16 @@
+.banner-container{
+    background-image:  url(../../../images/doctor-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-text{
+    width: 50%;
+    padding: 200px 0px;
+}
+
+@media only screen and (max-width:688px) {
+    .banner-text{
+        width: 100%;
+    }
+}

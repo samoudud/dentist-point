@@ -11,6 +11,9 @@ import Footer from './pages/Shared/Footer/Footer';
 import NotFound from './pages/NotFound/NotFound';
 import AuthProvider from './context/AuthProvider';
 import Register from './pages/Home/Register/Register';
+import Appointment from './pages/Appointment/Appointment';
+import PrivateRoute from './pages/Home/Login/PrivateRoute/PrivateRoute';
+import Details from './pages/Detils/Details';
 
 function App() {
   return (
@@ -25,6 +28,12 @@ function App() {
             <Route path='/home'>
               <Home></Home>
             </Route>
+            <PrivateRoute path='/appointment'>
+              <Appointment></Appointment>
+            </PrivateRoute>
+            <PrivateRoute path="/services/:serviceId">
+              <Details></Details>
+            </PrivateRoute>
             <Route path='/login'>
               <Login></Login>
             </Route>
