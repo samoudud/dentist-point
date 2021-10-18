@@ -19,14 +19,14 @@ const Details = () => {
     const service = services.filter(service => service.id == serviceId);
     const { img, name, description, price } = service[0];
     return (
-        <div style={{ height: '75vh' }} className=' details-container py-5'>
-            <div className='details-card shadow-lg  mx-auto border border-1 p-3'>
+        <div className=' details-container py-5'>
+            <div className='details-card shadow-lg  mx-auto p-3'>
                 <div>
                     <img className='img-fluid' src={img} alt="" />
                 </div>
                 <h4 className='mt-3'>{name}</h4>
                 <h5 className='text-primary'>Service fee: {price}</h5>
-                <p>{description.slice(0, 150)}...</p>
+                <p>{description}</p>
 
                 <Link to='/appointment'>
                     <Button variant='primary'>Book the service</Button>

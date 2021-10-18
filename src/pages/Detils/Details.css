@@ -6,5 +6,18 @@
 
 .details-card{
     width: 25%;
-    margin-top: 50px;
+    margin: 100px 0;
+    border: 1px solid white;
+  }
+
+  @media only screen and (max-width:688px) {
+    .details-container{
+        border: 0px;
+    }
+    .details-card{
+        margin: 0;
+        border: none;
+      width: 75%;
+    }
+  
   }
