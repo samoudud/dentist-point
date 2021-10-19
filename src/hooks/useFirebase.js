@@ -14,13 +14,8 @@ const useFirebase = () => {
 
     const signInWithGoogle = () => {
         const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
-                setUser(result.user);
-                setError('')
-            })
-            .catch(error => console.log(error.message))
-            .finally(() => setIsLoading(false));
+        return signInWithPopup(auth, googleProvider)
+
     };
 
     const setUserName = (uName) => {
@@ -49,14 +44,8 @@ const useFirebase = () => {
     };
 
     const signInWithEmail = (email, pass) => {
-        signInWithEmailAndPassword(auth, email, pass)
-            .then(result => {
-                setUser(result.user);
-                setError('')
-            })
-            .catch(error => {
-                setError(error.message)
-            })
+        return signInWithEmailAndPassword(auth, email, pass)
+
     }
 
     const logOut = () => {
@@ -91,7 +80,9 @@ const useFirebase = () => {
         signInWithGoogle,
         signInWithEmail,
         createAccountWithEmail,
-        logOut
+        logOut,
+        setIsLoading,
+        setError
     };
 };
 

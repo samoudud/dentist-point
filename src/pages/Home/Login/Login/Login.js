@@ -1,14 +1,28 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth';
 
 const Login = () => {
-    const { signInWithGoogle, signInWithEmail, error } = useAuth();
+    const { signInWithGoogle, signInWithEmail, error, setIsLoading, setError } = useAuth();
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
-    const handleLogin = () => {
-        signInWithEmail(email, pass);
+    const location = useLocation()
+    const history = useHistory();
+
+    const redirectUrl = location.state?.from || '/home';
+
+    const handleEmailLogIn = () => {
+        signInWithEmail(email, pass)
+            .then(result => {
+                history.push(redirectUrl);
+                setError('')
+            })
+            .catch(error => {
+                setError(error.message)
+            })
     }
 
     const handleEmailChange = e => {
@@ -16,6 +30,16 @@ const Login = () => {
     }
     const handlePassChange = e => {
         setPass(e.target.value);
+    }
+
+    const handleGoogleLogin = () => {
+        signInWithGoogle()
+            .then((result) => {
+                history.push(redirectUrl)
+
+            })
+            .catch(error => console.log(error.message))
+            .finally(() => setIsLoading(false));
     }
 
 
@@ -41,12 +65,12 @@ const Login = () => {
                                 }
 
 
-                                <button onClick={handleLogin} className="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+                                <button onClick={handleEmailLogIn} className="btn btn-primary btn-lg btn-block" type="submit">Login</button>
 
                                 <hr className="my-4" />
                                 <p>New to Dentist Point? <Link to='/register'>Register</Link></p>
 
-                                <button onClick={signInWithGoogle} className="btn btn-lg btn-block btn-primary" style={{ backgroundColor: '#dd4b39' }} type="submit"><i className="fab fa-google me-2"></i> Sign in with google</button>
+                                <button onClick={handleGoogleLogin} className="btn btn-lg btn-block btn-primary" style={{ backgroundColor: '#dd4b39' }} type="submit"><i className="fab fa-google me-2"></i> Sign in with google</button>
 
                             </div>
                         </div>
