@@ -2,7 +2,7 @@
     background:linear-gradient(0deg, rgba(233, 225, 229, 0.151), rgba(240, 245, 243, 0.555)), url(../../../images/rv-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 474px;
+    /* height: 474px; */
 }
 
 .review-card{

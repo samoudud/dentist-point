@@ -16,7 +16,7 @@ const Doctors = () => {
     return (
         <div className='container my-5'>
             <h2 className='section-title'>Meet Our Doctors</h2>
-            <Row xs={2} md={4} className="g-4 shadow px-2 py-3">
+            <Row xs={1} md={4} className="g-4 shadow px-2 py-3">
                 {
                     dentists.map(dentist => {
                         return (
