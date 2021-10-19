@@ -14,6 +14,7 @@ const Header = () => {
             <Navbar className="navbar"
                 collapseOnSelect
                 expand="md"
+                variant="dark"
 
                 sticky="top"
             >
@@ -42,7 +43,7 @@ const Header = () => {
 
                             {
                                 user?.email ?
-                                    <span>{user.displayName} < Button onClick={logOut} variant="danger">Log Out</Button></span>
+                                    <span className="text-white"><i className="far mx-2 fa-user"></i>{user.displayName} < Button onClick={logOut} variant="danger">Log Out</Button></span>
                                     :
                                     <Nav.Link as={Link} to="/login">
                                         Log In
