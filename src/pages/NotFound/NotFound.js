@@ -1,9 +1,11 @@
 import React from 'react';
+import img from '../../images/error.png'
 
 const NotFound = () => {
     return (
-        <div>
-            <h2>404 Page Not Found</h2>
+        <div >
+
+            <img className='img-fluid' src={img} alt="" />
         </div>
     );
 };

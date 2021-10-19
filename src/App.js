@@ -40,7 +40,7 @@ function App() {
             <Route path='/register'>
               <Register></Register>
             </Route>
-            <Route path='/*'>
+            <Route path='*'>
               <NotFound></NotFound>
             </Route>
           </Switch>
