@@ -11,6 +11,9 @@
   color: #3c9fd8;
   margin: 50px 0px;
 }
+.orange{
+  color: orange;;
+}
 
 .form-bg{
   background-image:linear-gradient(0deg, rgba(233, 225, 229, 0.151), rgba(240, 245, 243, 0.555)), url(./images/chair.jpg);
@@ -28,6 +31,9 @@
   }
   .footer-container{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .review-card{
+    width: 100%;
   }
 
 }
