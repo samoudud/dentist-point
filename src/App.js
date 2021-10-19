@@ -14,6 +14,7 @@ import Register from './pages/Home/Register/Register';
 import Appointment from './pages/Appointment/Appointment';
 import PrivateRoute from './pages/Home/Login/PrivateRoute/PrivateRoute';
 import Details from './pages/Detils/Details';
+import Blogs from './pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path='/home'>
               <Home></Home>
+            </Route>
+            <Route path='/blogs'>
+              <Blogs></Blogs>
             </Route>
             <PrivateRoute path='/appointment'>
               <Appointment></Appointment>

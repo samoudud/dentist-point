@@ -33,6 +33,9 @@ const Header = () => {
                             <Nav.Link as={HashLink} to="/home#doctors">
                                 Doctors
                             </Nav.Link>
+                            <Nav.Link as={Link} to='/blogs'>
+                                Blogs
+                            </Nav.Link>
                             <Nav.Link as={Link} to='/appointment'>
                                 Appointment
                             </Nav.Link>
