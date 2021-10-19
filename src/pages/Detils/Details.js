@@ -16,7 +16,7 @@ const Details = () => {
         </>
     }
     // console.log(services)
-    const service = services.filter(service => service.id == serviceId);
+    const service = services.filter(service => service.id === serviceId);
     const { img, name, description, price } = service[0];
     return (
         <div className=' details-container py-5'>
@@ -25,7 +25,7 @@ const Details = () => {
                     <img className='img-fluid' src={img} alt="" />
                 </div>
                 <h4 className='mt-3'>{name}</h4>
-                <h5 className='text-primary'>Service fee: {price}</h5>
+                <h5 className='text-primary'>Service fee: ${price}</h5>
                 <p>{description}</p>
 
                 <Link to='/appointment'>

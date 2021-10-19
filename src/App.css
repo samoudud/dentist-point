@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-.navbar{
-  background-color: #3c9fd8;
+.navbar, .footer{
+  background-color: #04679c;
 }
 
 .section-title{
@@ -12,6 +12,11 @@
   margin: 50px 0px;
 }
 
+.form-bg{
+  background-image:linear-gradient(0deg, rgba(233, 225, 229, 0.151), rgba(240, 245, 243, 0.555)), url(./images/chair.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* Responsive mobile variant  */
 @media only screen and (max-width:688px) {
@@ -20,6 +25,9 @@
   }
   .details-card{
     width: 100%;
+  }
+  .footer-container{
+    grid-template-columns: repeat(1, 1fr);
   }
 
 }

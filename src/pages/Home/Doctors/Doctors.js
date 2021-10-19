@@ -3,7 +3,7 @@ import React from 'react';
 const Doctors = () => {
     return (
         <div>
-            <h2>Our Doctors</h2>
+            <h2 className='section-title'>Meet Our Doctors</h2>
         </div>
     );
 };

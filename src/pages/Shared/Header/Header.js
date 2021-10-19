@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import useAuth from '../../../hooks/useAuth';
 import { HashLink } from 'react-router-hash-link';
 import { NavLink } from "react-router-dom";
+import logo from '../../../images/d-logo.png'
 
 const Header = () => {
     const { user, logOut } = useAuth();
@@ -17,7 +18,9 @@ const Header = () => {
                 sticky="top"
             >
                 <Container>
-                    <Navbar.Brand as={NavLink} to="/home"><span className=" fs-1">Dentist Point</span></Navbar.Brand>
+                    <Navbar.Brand as={NavLink} to="/home">
+                        <img className="w-75" src={logo} alt="" />
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto fw-bold">
