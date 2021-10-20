@@ -5,7 +5,7 @@ const Blog = (props) => {
     const { img, title, name, description } = props.blog;
     return (
         <Col >
-            <Card className='add text-white'>
+            <Card className='add h-100 text-white'>
                 <img className='img-fluid' src={img} alt="" />
                 <div className='p-3'>
                     <h4>{title}</h4>
